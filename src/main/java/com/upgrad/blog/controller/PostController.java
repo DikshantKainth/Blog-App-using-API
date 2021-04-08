@@ -45,4 +45,14 @@ public class PostController {
     }
 
 
+    //Update
+    /*@RequestMapping(method = RequestMethod.POST, value="/posts/{id}")
+    public String addPost(@RequestBody Post post, @PathVariable Integer id){
+        System.out.println(post.getTitle());//temp
+        post.setDate(new Date());
+        postService.updatePost(id,post);
+        String response ="{\"success\":true,\"message\":\"Post has been updated successfully\"}";
+        return response;
+    }*/
+
 }
